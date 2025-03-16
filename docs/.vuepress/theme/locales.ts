@@ -1,6 +1,7 @@
 import { enusNavbar, zhtwNavbar, zhcnNavbar } from "./navbar/index.js";
-import { zhTWLocale } from "./patch/i18n/zh_tw.js";
 import { enusSidebar, zhtwSidebar, zhcnSidebar } from "./sidebar/index.js";
+
+import { zhTWLocale } from "./patch/i18n/zh_tw.js";
 
 export default {
   "/": {
@@ -8,10 +9,6 @@ export default {
     sidebar: enusSidebar,
 
     author: "MangoJellyPudding",
-
-    blog: {
-      description: "An interested KubeJS developer.",
-    },
   },
   "/zh-tw/": {
     navbar: zhtwNavbar,
@@ -29,9 +26,5 @@ export default {
     sidebar: zhcnSidebar,
 
     author: "芒果凍布丁",
-
-    blog: {
-      description: "一个兴趣使然的 KubeJS 开发者",
-    },
   },
 };

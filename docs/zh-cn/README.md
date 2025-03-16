@@ -1,5 +1,5 @@
 ---
-title: 芒果的 KubeJS Wiki
+title: Mango's Test Plaza
 ---
 
 <Catalog/>

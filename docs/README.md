@@ -1,5 +1,5 @@
 ---
-title: Mango's KubeJS Wiki
+title: Mango's Test Plaza
 ---
 
 <Catalog/>

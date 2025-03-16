@@ -4,7 +4,7 @@ import locales from "./theme/locales.js";
 export default hopeTheme(
   {
     // Basic
-    hostname: "wiki.mango-kubejs.pages.dev",
+    hostname: "wiki.mango-test-plaza.pages.dev",
     favicon: "/logo.png",
     license: "AGPL-3.0",
     // hotReload: true, // enable it to preview all changes in time
@@ -23,7 +23,7 @@ export default hopeTheme(
       end: ["Repo", "Outlook"],
     },
     logo: "/logo.svg",
-    repo: "Mango-Minecraft-Project/Mango-KubeJS",
+    repo: "Mango-Minecraft-Project/Mango-Test-Plaza",
 
     // - Sidebar
     sidebarSorter: ["readme", "order", "filename", "title", "date", "date-desc"],
@@ -33,7 +33,7 @@ export default hopeTheme(
     lastUpdated: true,
     contributors: true,
     editLink: true,
-    docsRepo: "Mango-Minecraft-Project/Mango-KubeJS",
+    docsRepo: "Mango-Minecraft-Project/Mango-Test-Plaza",
     docsBranch: "wiki",
     docsDir: "docs",
 
@@ -133,43 +133,6 @@ export default hopeTheme(
         maxSuggestions: 20,
         getExtraFields: (page) =>
           (<string[]>page.frontmatter.tags ?? []).concat(<string[]>page.frontmatter.categories ?? []),
-      },
-
-      git: {
-        changelog: true,
-      },
-
-      redirect: {
-        config: (app) => {
-          const config = {
-            ...Object.fromEntries(
-              app.pages
-                .filter(({ path }) => {
-                  const data = path.split("/").includes("addons");
-                  return data;
-                })
-                .map(({ path }) => {
-                  const before = path
-                    .replace("Heaven_Destiny_Moment", "heaven_destiny_moment")
-                    .replace("TConstruct_JS", "tconstruct_js");
-                  const data = [before, path];
-                  return before !== path ? data : [];
-                })
-                .filter((data) => !!data.length)
-            ),
-            "/zh-tw/addons/advancement_js": "/zh-tw/addons/Advancement_JS",
-            "/zh-tw/addons/createheatjs": "/zh-tw/addons/Create_Heat_JS",
-            "/zh-tw/addons/create-ponder": "/zh-tw/addons/Create_Ponder",
-            "/zh-tw/addons/eventjs": "/zh-tw/addons/EventJS",
-            "/zh-tw/addons/filesjs": "/zh-tw/addons/FilesJS",
-            "/zh-tw/addons/heaven_destiny_moment/": "/zh-tw/addons/Heaven_Destiny_Moment/",
-            "/zh-tw/addons/tconstruct_js/": "/zh-tw/addons/TConstruct_JS/",
-
-            "/addons/tconstruct_js/": "/addons/TConstruct_JS/",
-          };
-          // console.log(config);
-          return config;
-        },
       },
     },
   },

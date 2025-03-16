@@ -6,7 +6,7 @@
           <td colspan="2">{{ name }}</td>
         </tr>
         <tr>
-          <td colspan="2"><img src="/docs/test/zh-cn/Fallen_Star/icon.png"></td>
+          <td colspan="2" class=""img><Attachment link="/icon.png" /></td>
         </tr>
         <tr>
           <td colspan="2">　</td>
@@ -36,7 +36,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .terraria-item-info {
   width: 200px;
   margin-left: 20px !important;
@@ -49,10 +49,10 @@
   z-index: 1000;
 
   img {
-    max-height: 12em;
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
+    max-height: 12em !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    width: 100% !important;
     // object-fit: contain;
   }
 }

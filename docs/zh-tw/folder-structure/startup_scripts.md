@@ -1,3 +1,0 @@
----
-title: startup_scripts/
----

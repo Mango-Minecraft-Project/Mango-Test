@@ -6,7 +6,7 @@ author: lazy_pillow
 date: 2025-02-18
 sidebar: false
 
-# layout: TerrariaItem
+layout: TerrariaItem
 item:
   id: fallen_star
   name: 坠落之星
