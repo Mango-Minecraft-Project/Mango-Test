@@ -20,4 +20,8 @@ import SkipLink from "vuepress-theme-hope/components/SkipLink.js";
 h1, h2, h3, h4, h5, h6 {
   border-bottom: unset;
 }
+table hr {
+  border: 0;
+  border-top: 1px solid var(--vp-c-border-hard);
+}
 </style>

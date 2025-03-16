@@ -37,7 +37,10 @@ export default {
       type: String,
       required: true,
     },
-    text: String,
+    text: {
+      type: String,
+      default: "",
+    },
   },
   computed: {
     currentComponent() {
@@ -65,7 +68,7 @@ export default {
     },
     resolvedText() {
       // 如果沒有指定 text，則使用 link
-      return this.text ?? this.link;
+      return this.text;
     },
   },
 };

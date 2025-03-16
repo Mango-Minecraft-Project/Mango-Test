@@ -43,7 +43,7 @@ export default hopeTheme(
 
     // Appearance
     darkmode: "enable",
-    externalLinkIcon: false,
+    // externalLinkIcon: false,
     fullscreen: true,
     pure: true,
     focus: false,

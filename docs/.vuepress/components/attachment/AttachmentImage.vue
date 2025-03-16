@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <img :src="link" :alt="text"></img>
+    <img :src="link" :alt="text" v-bind="$attrs"></img>
     <figcaption v-if="text">{{ text }}</figcaption>
   </figure>
 </template>
