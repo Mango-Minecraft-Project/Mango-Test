@@ -1,4 +1,5 @@
 ---
+title: Slot Demo
 layout: SlotDemo
 ---
 

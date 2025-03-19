@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import CommonWrapper from "vuepress-theme-hope/components/CommonWrapper.js";
-import NormalPage from "vuepress-theme-hope/components/NormalPage.js";
-import SkipLink from "vuepress-theme-hope/components/SkipLink.js";
-import { FadeSlideY } from "vuepress-theme-hope/components/transitions/index.js";
+import CommonWrapper from "@theme-hope/components/CommonWrapper.js";
+import NormalPage from "@theme-hope/components/NormalPage.js";
+import SkipLink from "@theme-hope/components/SkipLink.js";
+import { FadeSlideY } from "@theme-hope/components/transitions/index.js";
 </script>
 
 <template>
